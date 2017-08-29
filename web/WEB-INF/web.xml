@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <context-param>
+        <param-name>contextParamNAME</param-name>
+        <param-value>context_admin_name</param-value>
+    </context-param>
+    <context-param>
+        <param-name>contextParamID</param-name>
+        <param-value>context_admin</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>contextParamPW</param-name>
+        <param-value>1234abcd</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>Listener.Listener1</listener-class>
+    </listener>
+
+    <!--에러 예외처리페이지 지정.. 이때는 지시자 <%@ page를 쓰지 않는다 -->
+    <!--<error-page>-->
+        <!--<error-code>404</error-code>-->
+        <!--<location>/exception/error404.jsp</location>-->
+    <!--</error-page>-->
+
+    <!--<error-page>-->
+        <!--<error-code>500</error-code>-->
+        <!--<location>/exception/error500.jsp</location>-->
+    <!--</error-page>-->
+
+
+    <!--<servlet>-->
+        <!--<servlet-name>InitParam</servlet-name>-->
+        <!--<servlet-class>helloworld.InitParam</servlet-class>-->
+        <!--<init-param>-->
+            <!--<param-name>id</param-name>-->
+            <!--<param-value>initID</param-value>-->
+        <!--</init-param>-->
+
+        <!--<init-param>-->
+            <!--<param-name>pw</param-name>-->
+            <!--<param-value>initPW</param-value>-->
+        <!--</init-param>-->
+
+
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>InitParam</servlet-name>-->
+        <!--<url-pattern>/initparam</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+    <!--<servlet>-->
+    <!--<servlet-name>HelloServlet</servlet-name>-->
+    <!--<servlet-class>helloworld.hello</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>HelloServlet</servlet-name>-->
+    <!--<url-pattern>/heee</url-pattern>-->
+    <!--</servlet-mapping>-->
+</web-app>
